@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import { Switch, Route } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Signup from './components/Signup';
-import FormikLogin from './components/Login';
+import Login from './components/Login';
 import Home from './components/Home';
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/signup" component={Signup} />
-          <Route path="/login" render={() => <FormikLogin email="ajay" />} />
+          <Route path="/login" component={Login} />
         </Switch>
       </Router>
     </div>
